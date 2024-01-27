@@ -1,0 +1,130 @@
+/*=============== GOOGLE FONTS ===============*/
+/* @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"); */
+@font-face {
+  font-family: "Inter-Regular";
+  src: url("assets/fonts/static/Inter-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter-SemiBold";
+  src: url("assets/fonts/static/Inter-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter-Bold";
+  src: url("assets/fonts/static/Inter-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  /*========== Colors ==========*/
+
+  --white: hsl(0, 0%, 100%);
+  --gray: hsl(0, 0%, 20%);
+  --dark-gray: hsl(0, 0%, 12%);
+  --off-black: hsl(0, 0%, 8%);
+  --green: hsl(75, 94%, 57%);
+
+  /*========== Font and typography ==========*/
+
+  --h1-font-size: 1.5rem;
+  --body-font-size: 0.875rem;
+  --ff-regular: "Inter-Regular", sans-serif;
+  --ff-semibold: "Inter-SemiBold", sans-serif;
+  --ff-bold: "Inter-Bold", sans-serif;
+  --body-font: var(--ff-regular);
+}
+
+/*=============== BASE ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: var(--body-font);
+  font-size: var(--body-font-size);
+  background-color: var(--off-black);
+  color: var(--white);
+  line-height: 1.5;
+  min-height: 100vh;
+}
+
+h1 {
+  color: var(--white);
+  font-family: var(--ff-bold);
+  font-size: var(--h1-font-size);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+a {
+  text-decoration: none;
+}
+
+/*=============== CSS CLASSES ===============*/
+body,
+.profile-card,
+.profile-card_header,
+.profile-card_links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.name,
+.location,
+.info {
+  text-align: center;
+}
+/* main {
+  width: 100%;
+  max-width: 400px;
+} */
+
+.profile-card {
+  background-color: var(--dark-gray);
+  padding: 2.5rem;
+  border-radius: 0.5rem;
+  width: 378px;
+}
+.location {
+  color: var(--green);
+  font-family: var(--ff-semibold);
+  margin-bottom: 1rem;
+}
+/* section img {
+  border-radius: 50%;
+} */
+.profile-card_header img {
+  border-radius: 50%;
+}
+.profile-card_links {
+  width: 100%;
+  gap: 0.9rem;
+}
+
+a {
+  font-family: var(--body-font);
+  font-family: var(--ff-semibold);
+  color: var(--white);
+  line-height: 1.5;
+  background-color: var(--gray);
+  width: 100%;
+  text-align: center;
+  padding: 0.93rem;
+  border-radius: 0.5rem;
+}
+
+a:hover {
+  background-color: var(--green);
+  color: var(--dark-gray);
+}

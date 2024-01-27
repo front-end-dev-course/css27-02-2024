@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Units Example</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      .example-container {
+        padding: 20px;
+        background-color: #f2f2f2;
+        margin-bottom: 20px;
+      }
+      .example-text {
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Em (em) Example -->
+    <div class="example-container" style="font-size: 20px">
+      <div class="example-text" style="font-size: 1em">This is 1em</div>
+      <div class="example-text" style="font-size: 2em">This is 2em</div>
+    </div>
+
+    <!-- Rem (rem) Example -->
+    <div class="example-container" style="font-size: 20px">
+      <div class="example-text" style="font-size: 1rem">
+        This is 1rem font size
+      </div>
+      <div class="example-text" style="font-size: 2rem">
+        This is 2rem font size
+      </div>
+    </div>
+    <!-- Pixels (px) Example -->
+    <div class="example-container">
+      <div class="example-text" style="width: 100px; height: 100px">
+        This is 100px by 100px
+      </div>
+    </div>
+
+    <!-- Percentage (%) Example -->
+    <div class="example-container">
+      <div
+        class="example-text"
+        style="
+          width: 50%;
+          height: 50px;
+          background-color: blue;
+          color: white;
+          margin-bottom: 10px;
+        "
+      >
+        This is 50% width
+      </div>
+      <div
+        class="example-text"
+        style="width: 50vw; height: 50px; background-color: red; color: white"
+      >
+        This is 50vw width
+      </div>
+    </div>
+    <div
+      class="example-text"
+      style="width: 50vw; height: 50px; background-color: red; color: white"
+    >
+      This is 50vw width
+    </div>
+    <div class="example-text">
+      <div
+        class="example-text"
+        style="
+          width: 100%;
+          height: 100%;
+          background-color: orange;
+          color: white;
+        "
+      >
+        This is 100% width and 100% height
+      </div>
+    </div>
+
+    <!-- Viewport Width (vw) Example -->
+    <div>
+      <div
+        class="example-text"
+        style="
+          width: 100vw;
+          height: 100vh;
+          background-color: green;
+          color: white;
+        "
+      >
+        This is 100vw width and 100vh height
+      </div>
+    </div>
+  </body>
+</html>

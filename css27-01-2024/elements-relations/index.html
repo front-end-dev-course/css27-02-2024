@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Hierarchy Example</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      /* Parent Container Styles */
+      #parentContainer {
+        padding: 10px;
+        background-color: #999;
+      }
+
+      /* Child Element 1 Styles */
+      header {
+        background-color: #f2f2f2;
+        padding: 10px;
+        border: 1px solid #999;
+        margin-bottom: 10px;
+      }
+
+      /* Child Element 2 Styles */
+      main {
+        padding: 10px;
+        background-color: #514e4e;
+      }
+
+      /* Descendant Element 1 Styles */
+      nav {
+        flex: 1;
+        background-color: #bfbcbc;
+        padding: 10px;
+        border-right: 1px solid #999;
+        margin-bottom: 10px;
+      }
+
+      /* Descendant Element 2 Styles */
+      article {
+        flex: 2;
+        padding: 10px;
+        background-color: #bfbcbc;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Parent Element -->
+    <div id="parentContainer">
+      <h1>This is a Div Element and the Parent Container</h1>
+      <!-- Child Element 1 (Header) -->
+      <header>
+        <h1>Child Element 1 (Header)</h1>
+      </header>
+
+      <!-- Child Element 2 (Main) -->
+      <main>
+        <h1>Child Element 2 (Main)</h1>
+        <!-- Descendant Element 1 (Nav) -->
+        <nav>
+          <h1>Descendant Element 1 (Nav)</h1>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+
+        <!-- Descendant Element 2 (Article) -->
+        <article>
+          <h1>Descendant Element 2 (Article)</h1>
+          <h2>Main Content</h2>
+          <p>This is the main content area of the webpage.</p>
+        </article>
+      </main>
+    </div>
+  </body>
+</html>
